@@ -24,18 +24,23 @@ function draw() {
   boxes.forEach((box, index) => {
     box.angle = box.angle + 0.01;
     if (index % 2 == 0) {
+
       push();
       rotateY(box.angle);
       box.drawBox();
       pop();
+
     } else {
+
       push();
       rotateX(box.angle);
       box.drawBox();
       pop();
+      
     }
   });
 }
+
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }

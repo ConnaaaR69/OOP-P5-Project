@@ -15,7 +15,7 @@ class Box {
   }
 
   drawBox() {
-    let boxColor = color(this.r, this.g, this.b);
+    // let boxColor = color(this.r, this.g, this.b);
     fill(0,0,0,0);
     strokeWeight(2);
     stroke(this.r, this.g, this.b);
